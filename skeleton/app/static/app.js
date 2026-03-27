@@ -24,6 +24,9 @@ let usageChart = null;
 //
 // Hint: value를 소문자로 변환 후 비교하세요.
 function badgeClass(value) {
+    const v = (value || "").toLowerCase();
+
+    // 여기에 구현하세요
     return "badge";
 }
 

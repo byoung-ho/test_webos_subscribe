@@ -16,3 +16,9 @@ router = APIRouter()
 # - 디바이스가 존재하지 않는 경우: HTTPException(status_code=404) 반환
 # - 참고: usage_by_device 딕셔너리를 활용하세요.
 # =============================================================================
+@router.get("/devices/{device_id}/usage")
+def get_device_usage(device_id: str):
+    # 1. usage_by_device에서 device_id로 조회
+    # 2. 존재하면 사용 현황 데이터 반환
+    # 3. 존재하지 않으면 HTTPException(status_code=404) 발생
+    pass
